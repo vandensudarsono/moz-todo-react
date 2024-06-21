@@ -31,7 +31,7 @@ function App(props) {
   }
 
   const [tasks, setTask] = useState(props.tasks);
-  const taskList = props.tasks?.map((task) => (
+  const taskList = tasks?.map((task) => (
     <Todo 
       id={task.id} 
       name={task.name} 
